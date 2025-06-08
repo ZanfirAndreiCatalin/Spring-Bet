@@ -4,10 +4,9 @@ public class Bet {
     private int id;
     private String name;
     private String sport;
-
-    private String CONDITION;
-
     private double odd;
+
+    public Bet() {} // Needed for Jackson (JSON <-> Java)
 
     public Bet(int id, String name, String sport, double odd) {
         this.id = id;
